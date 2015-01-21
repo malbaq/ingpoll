@@ -40,6 +40,7 @@
 		E2CBD65F1A6FAA9200E3B179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2CBD6601A6FAA9200E3B179 /* IngPollTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngPollTests.swift; sourceTree = "<group>"; };
 		E2CBD66A1A6FAAEC00E3B179 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		E2CBD66C1A6FADB200E3B179 /* IngPoll-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IngPoll-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 				E2CBD6531A6FAA9200E3B179 /* LaunchScreen.xib */,
 				E2CBD66A1A6FAAEC00E3B179 /* FacebookSDK.framework */,
 				E2CBD6461A6FAA9200E3B179 /* Supporting Files */,
+				E2CBD66C1A6FADB200E3B179 /* IngPoll-Bridging-Header.h */,
 			);
 			path = IngPoll;
 			sourceTree = "<group>";
@@ -346,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/IngPoll",
@@ -353,6 +356,8 @@
 				INFOPLIST_FILE = IngPoll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IngPoll/IngPoll-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -360,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/IngPoll",
@@ -367,6 +373,7 @@
 				INFOPLIST_FILE = IngPoll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IngPoll/IngPoll-Bridging-Header.h";
 			};
 			name = Release;
 		};
