@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E25200BD1A6FC46300ACBD50 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25200BC1A6FC46300ACBD50 /* LoginViewController.swift */; };
 		E2CBD6491A6FAA9200E3B179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CBD6481A6FAA9200E3B179 /* AppDelegate.swift */; };
 		E2CBD64B1A6FAA9200E3B179 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CBD64A1A6FAA9200E3B179 /* FirstViewController.swift */; };
 		E2CBD64D1A6FAA9200E3B179 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CBD64C1A6FAA9200E3B179 /* SecondViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E25200BC1A6FC46300ACBD50 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E2CBD6431A6FAA9200E3B179 /* IngPoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IngPoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2CBD6471A6FAA9200E3B179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2CBD6481A6FAA9200E3B179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				E2CBD66A1A6FAAEC00E3B179 /* FacebookSDK.framework */,
 				E2CBD6461A6FAA9200E3B179 /* Supporting Files */,
 				E2CBD66C1A6FADB200E3B179 /* IngPoll-Bridging-Header.h */,
+				E25200BC1A6FC46300ACBD50 /* LoginViewController.swift */,
 			);
 			path = IngPoll;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E25200BD1A6FC46300ACBD50 /* LoginViewController.swift in Sources */,
 				E2CBD64D1A6FAA9200E3B179 /* SecondViewController.swift in Sources */,
 				E2CBD6491A6FAA9200E3B179 /* AppDelegate.swift in Sources */,
 				E2CBD64B1A6FAA9200E3B179 /* FirstViewController.swift in Sources */,
@@ -482,6 +486,7 @@
 				E2CBD6661A6FAA9200E3B179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2CBD6671A6FAA9200E3B179 /* Build configuration list for PBXNativeTarget "IngPollTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				E2CBD6691A6FAA9200E3B179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
