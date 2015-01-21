@@ -10,8 +10,53 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet var profileImage: UIImageView!
+    
+    @IBAction func signUpButtonPressed(sender: AnyObject) {
+        
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var user = PFUser.currentUser()
+        
+        //Get the fb profile info and save to parse
+        var FBSession = PFFacebookUtils.session()
+        
+        var accessToken = FBSession.accessTokenData.accessToken
+        
+        var url = NSURL(string: "https://graph.facebook.com/me/picture?type=large&return_ssl_resources=1&access_token="+accessToken)
+        
+        let urlRequest = NSURLRequest(URL: url!)
+        
+        NSURLConnection.sendAsynchronousRequest(urlRequest, queue: NSOperationQueue.mainQueue(), completionHandler: {
+            response, data, error in
+            
+            let image = UIImage(data: data)
+            
+            self.profileImage.image = image
+            
+            user["profileImage"] = data
+            
+            user.save()
+            
+            FBRequestConnection.startForMeWithCompletionHandler({
+                connection, result, error in
+                
+                println(result)
+                
+                user["first_name"] = result["first_name"]
+                user["last_name"] = result["last_name"]
+                user["name"] = result["name"]
+                user["email"] = result["email"]
+                user.save()
+                
+            })
+            
+        })
 
         // Do any additional setup after loading the view.
     }
