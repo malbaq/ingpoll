@@ -27,6 +27,7 @@ class LoginViewController: UIViewController {
                 self.signInCancelledLabel.alpha = 1
                 NSLog("Uh oh. The user cancelled the Facebook login.")
             } else if user.isNew {
+                self.performSegueWithIdentifier("signUp", sender: self)
                 NSLog("User signed up and logged in through Facebook!")
             } else {
                 NSLog("User logged in through Facebook!")

@@ -122,6 +122,7 @@
                     </view>
                     <connections>
                         <outlet property="signInCancelledLabel" destination="iyk-mv-amp" id="Kp1-lB-mqF"/>
+                        <segue destination="Upb-U8-s5r" kind="show" identifier="signUp" id="Sw8-uh-BQg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I34-ec-CJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
