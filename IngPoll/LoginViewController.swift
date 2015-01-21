@@ -9,17 +9,22 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    @IBOutlet var signInCancelledLabel: UILabel!
+    
+    //the var below suddenly appeared at #120 at 07:40
+    var fbLoginView: FBLoginView = FBLoginView(readPermissions: ["email", "public_profile"])
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBAction func signIn(sender: AnyObject) {
         
         var permissions = ["public_profile", "email"]
+        
+        self.signInCancelledLabel.alpha = 0
         
         PFFacebookUtils.logInWithPermissions(permissions, {
             (user: PFUser!, error: NSError!) -> Void in
             if user == nil {
+                self.signInCancelledLabel.alpha = 1
                 NSLog("Uh oh. The user cancelled the Facebook login.")
             } else if user.isNew {
                 NSLog("User signed up and logged in through Facebook!")
@@ -27,6 +32,19 @@ class LoginViewController: UIViewController {
                 NSLog("User logged in through Facebook!")
             }
         })
+
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+        
+        if PFUser.currentUser() != nil {
+        
+            println("logged in")
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
