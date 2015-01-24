@@ -27,9 +27,10 @@ class LoginViewController: UIViewController {
                 self.signInCancelledLabel.alpha = 1
                 NSLog("Uh oh. The user cancelled the Facebook login.")
             } else if user.isNew {
-                self.performSegueWithIdentifier("signUp", sender: self)
+                self.performSegueWithIdentifier("login", sender: self)
                 NSLog("User signed up and logged in through Facebook!")
             } else {
+                self.performSegueWithIdentifier("login", sender: self)
                 NSLog("User logged in through Facebook!")
             }
         })
@@ -43,6 +44,8 @@ class LoginViewController: UIViewController {
         
         if PFUser.currentUser() != nil {
         
+            self.performSegueWithIdentifier("login", sender: self)
+
             println("logged in")
             
         }
