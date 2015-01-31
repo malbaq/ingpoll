@@ -10,12 +10,20 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
+    let contentToShare = ["Blabla"]
+    
     var votingStatus: Bool?
     
     var controlDate = NSUserDefaults.standardUserDefaults().objectForKey("controlDate") as? NSDate
     
     @IBOutlet var evkurovImage: UIImageView!
     
+    @IBAction func actionButtonPressed(sender: AnyObject) {
+        
+        let sharingActivityVC = UIActivityViewController(activityItems: contentToShare, applicationActivities: nil)
+        self.presentViewController(sharingActivityVC, animated: true, completion: nil)
+        
+    }
     @IBAction func yesButtonPressed(sender: AnyObject) {
         
         //Check if votingStatus is true
