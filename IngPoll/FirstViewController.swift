@@ -10,11 +10,18 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    let contentToShare = ["Current rating is XX. Download the app at url to vote. To bring your voice tweet with #hashtag"]
+    let contentToShare = ["Current rating is XX. Download the app at url to vote. To bring your voice tweet with #IngPoll"]
     
     var votingStatus: Bool?
     
     var controlDate = NSUserDefaults.standardUserDefaults().objectForKey("controlDate") as? NSDate
+    
+    @IBAction func logOut(sender: AnyObject) {
+    
+        PFUser.logOut()
+        let loginVC = storyboard?.instantiateViewControllerWithIdentifier("loginVC") as? LoginViewController
+        self.presentViewController(loginVC!, animated: true, completion: nil)
+    }
     
     @IBOutlet var evkurovImage: UIImageView!
     
@@ -47,7 +54,7 @@ class FirstViewController: UIViewController {
             //alert
             var alert = UIAlertController(title: "Превышен лимит голосования", message: "Вы можете проголосовать только 1(один) раз в сутки. Последний раз Вы голосовали \(self.controlDate!) (Гринвич).", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { action in
-                self.dismissViewControllerAnimated(true, completion: nil)
+                alert.dismissViewControllerAnimated(true, completion: nil)
             }))
             self.presentViewController(alert, animated: true, completion: nil)
             
@@ -78,7 +85,7 @@ class FirstViewController: UIViewController {
             //alert
             var alert = UIAlertController(title: "Превышен лимит голосования", message: "Вы можете проголосовать только 1(один) раз в сутки. Последний раз Вы голосовали \(self.controlDate!) (Гринвич).", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { action in
-                self.dismissViewControllerAnimated(true, completion: nil)
+                alert.dismissViewControllerAnimated(true, completion: nil)
             }))
             self.presentViewController(alert, animated: true, completion: nil)
             
