@@ -101,7 +101,12 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        let something : AnyObject! = PFCloud.callFunction("ratio", withParameters: [:])
         
+        println(something)
+        
+        let votes = something["vote"] as Int
+        numberOfVotes.text = String(votes)
         
         // Find if user haven't already voted within 1 day so if his/her voting status true
         
