@@ -107,6 +107,9 @@ class FirstViewController: UIViewController {
         
         println(something)
         
+        let somethingAsFLoat = (something["rating"]) as Float
+        currentRating.text = "\(somethingAsFLoat*100)" + " %"
+        
         let votes = something["vote"] as Int
         numberOfVotes.text = String(votes)
         
