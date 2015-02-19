@@ -45,6 +45,7 @@ class FirstViewController: UIViewController {
                     //update NSUserdefaults
                     NSUserDefaults.standardUserDefaults().setObject(NSDate(), forKey: "controlDate")
                     NSUserDefaults.standardUserDefaults().synchronize()
+                    self.controlDate = NSUserDefaults.standardUserDefaults().objectForKey("controlDate") as? NSDate
                     self.votingStatus = false
                 } else {
                     println(error)
@@ -76,6 +77,7 @@ class FirstViewController: UIViewController {
                     //update NSUserdefaults
                     NSUserDefaults.standardUserDefaults().setObject(NSDate(), forKey: "controlDate")
                     NSUserDefaults.standardUserDefaults().synchronize()
+                    self.controlDate = NSUserDefaults.standardUserDefaults().objectForKey("controlDate") as? NSDate
                     self.votingStatus = false
                 } else {
                     println(error)
