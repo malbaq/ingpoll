@@ -116,7 +116,7 @@ class FirstViewController: UIViewController {
         let cloudFunctionResponseVoteToInt = cloudFunctionResponse["vote"] as Int
         
         let cloudFunctionResponseVoteToString = String(cloudFunctionResponseVoteToInt)
-        numberOfVotes.text = cloudFunctionResponseVoteToString
+        numberOfVotes.text = cloudFunctionResponseVoteToString + " чел."
         
         // Find if user haven't already voted within 1 day so if his/her voting status true
         
@@ -143,20 +143,20 @@ class FirstViewController: UIViewController {
         
         // image loading code
         
-        let url = NSURL(string: "http://www.ingushetia.ru/images/president3.jpg")
-        
-        let urlRequest = NSURLRequest(URL: url!)
-        
-        NSURLConnection.sendAsynchronousRequest(urlRequest, queue: NSOperationQueue.mainQueue(), completionHandler: {
-            response, data, error in
-            
-            if error != nil {
-                println("fuck off")
-            } else {
-                let image = UIImage(data: data)
-                self.evkurovImage.image = image
-            }
-        })
+//        let url = NSURL(string: "http://www.ingushetia.ru/images/president3.jpg")
+//        
+//        let urlRequest = NSURLRequest(URL: url!)
+//        
+//        NSURLConnection.sendAsynchronousRequest(urlRequest, queue: NSOperationQueue.mainQueue(), completionHandler: {
+//            response, data, error in
+//            
+//            if error != nil {
+//                println("fuck off")
+//            } else {
+//                let image = UIImage(data: data)
+//                self.evkurovImage.image = image
+//            }
+//        })
     }
     
     override func didReceiveMemoryWarning() {
