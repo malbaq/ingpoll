@@ -103,15 +103,20 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let something : AnyObject! = PFCloud.callFunction("ratio", withParameters: [:])
+        let cloudFunctionResponse : AnyObject! = PFCloud.callFunction("ratio", withParameters: [:])
         
-        println(something)
+        println(cloudFunctionResponse)
         
-        let somethingAsFLoat = (something["rating"]) as Float
-        currentRating.text = "\(somethingAsFLoat)" + "%"
+        let cloudFunctionResponseRatingToFloat = (cloudFunctionResponse["rating"]) as Float
+   //     currentRating.text = "\(somethingAsFLoat)" + "%"
         
-        let votes = something["vote"] as Int
-        numberOfVotes.text = String(votes)
+        let cloudFunctionResponseRatingToString = String(format: "%.2f", cloudFunctionResponseRatingToFloat)
+        currentRating.text = cloudFunctionResponseRatingToString + "%"
+
+        let cloudFunctionResponseVoteToInt = cloudFunctionResponse["vote"] as Int
+        
+        let cloudFunctionResponseVoteToString = String(cloudFunctionResponseVoteToInt)
+        numberOfVotes.text = cloudFunctionResponseVoteToString
         
         // Find if user haven't already voted within 1 day so if his/her voting status true
         
