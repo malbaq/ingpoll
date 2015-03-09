@@ -110,7 +110,7 @@ class FirstViewController: UIViewController {
         let cloudFunctionResponseRatingToFloat = (cloudFunctionResponse["rating"]) as Float
    //     currentRating.text = "\(somethingAsFLoat)" + "%"
         
-        let cloudFunctionResponseRatingToString = String(format: "%.2f", cloudFunctionResponseRatingToFloat)
+        let cloudFunctionResponseRatingToString = String(format: "%.1f", cloudFunctionResponseRatingToFloat)
         currentRating.text = cloudFunctionResponseRatingToString + "%"
 
         let cloudFunctionResponseVoteToInt = cloudFunctionResponse["vote"] as Int
