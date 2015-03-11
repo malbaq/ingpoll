@@ -11,7 +11,9 @@
 		E25200BD1A6FC46300ACBD50 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25200BC1A6FC46300ACBD50 /* LoginViewController.swift */; };
 		E25200C11A6FC57F00ACBD50 /* facebooklogin.png in Resources */ = {isa = PBXBuildFile; fileRef = E25200C01A6FC57F00ACBD50 /* facebooklogin.png */; };
 		E25200C31A6FC98C00ACBD50 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25200C21A6FC98C00ACBD50 /* SignUpViewController.swift */; };
-		E26D27BC1AB06EEA00F3008B /* About-50.png in Resources */ = {isa = PBXBuildFile; fileRef = E26D27BB1AB06EE900F3008B /* About-50.png */; };
+		E26D27C51AB0A10F00F3008B /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = E26D27C31AB0A10F00F3008B /* info.png */; };
+		E26D27C61AB0A10F00F3008B /* poll.png in Resources */ = {isa = PBXBuildFile; fileRef = E26D27C41AB0A10F00F3008B /* poll.png */; };
+		E26D27C81AB0C31200F3008B /* launchScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26D27C71AB0C31200F3008B /* launchScreen.jpg */; };
 		E2CBD6491A6FAA9200E3B179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CBD6481A6FAA9200E3B179 /* AppDelegate.swift */; };
 		E2CBD64B1A6FAA9200E3B179 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CBD64A1A6FAA9200E3B179 /* FirstViewController.swift */; };
 		E2CBD64D1A6FAA9200E3B179 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CBD64C1A6FAA9200E3B179 /* SecondViewController.swift */; };
@@ -51,7 +53,9 @@
 		E25200BC1A6FC46300ACBD50 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E25200C01A6FC57F00ACBD50 /* facebooklogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebooklogin.png; sourceTree = "<group>"; };
 		E25200C21A6FC98C00ACBD50 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		E26D27BB1AB06EE900F3008B /* About-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About-50.png"; sourceTree = "<group>"; };
+		E26D27C31AB0A10F00F3008B /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		E26D27C41AB0A10F00F3008B /* poll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poll.png; sourceTree = "<group>"; };
+		E26D27C71AB0C31200F3008B /* launchScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launchScreen.jpg; sourceTree = "<group>"; };
 		E2CBD6431A6FAA9200E3B179 /* IngPoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IngPoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2CBD6471A6FAA9200E3B179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2CBD6481A6FAA9200E3B179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,7 +155,9 @@
 				E25200C01A6FC57F00ACBD50 /* facebooklogin.png */,
 				E2EC082C1A8F73F80076DC7E /* backgroundImage.png */,
 				E21258BA1A977C2F00EB4210 /* evkur.png */,
-				E26D27BB1AB06EE900F3008B /* About-50.png */,
+				E26D27C31AB0A10F00F3008B /* info.png */,
+				E26D27C41AB0A10F00F3008B /* poll.png */,
+				E26D27C71AB0C31200F3008B /* launchScreen.jpg */,
 				E2CBD6511A6FAA9200E3B179 /* Images.xcassets */,
 				E2CBD6531A6FAA9200E3B179 /* LaunchScreen.xib */,
 				E2CBD66F1A6FAF1C00E3B179 /* Bolts.framework */,
@@ -272,12 +278,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E21258BB1A977C2F00EB4210 /* evkur.png in Resources */,
+				E26D27C51AB0A10F00F3008B /* info.png in Resources */,
 				E2CBD6501A6FAA9200E3B179 /* Main.storyboard in Resources */,
 				E2CBD6551A6FAA9200E3B179 /* LaunchScreen.xib in Resources */,
-				E26D27BC1AB06EEA00F3008B /* About-50.png in Resources */,
+				E26D27C81AB0C31200F3008B /* launchScreen.jpg in Resources */,
 				E2CBD6521A6FAA9200E3B179 /* Images.xcassets in Resources */,
 				E2EC082D1A8F73F80076DC7E /* backgroundImage.png in Resources */,
 				E25200C11A6FC57F00ACBD50 /* facebooklogin.png in Resources */,
+				E26D27C61AB0A10F00F3008B /* poll.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

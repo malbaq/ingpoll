@@ -107,7 +107,7 @@ class FirstViewController: UIViewController {
 //        
 //        if let tabBarItem = tabBarController?.tabBar.items?.first as? UITabBarItem {
 //            let unselectedImage = UIImage(named: "About-50.png")
-//            let selectedImage = UIImage(named: "About-50.png")
+//            let selectedImage = UIImage(named: "1426104107_info-24")
 //            
 //            tabBarItem.image = unselectedImage?.imageWithRenderingMode(.AlwaysOriginal)
 //            tabBarItem.selectedImage = selectedImage}

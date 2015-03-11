@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="q4W-ho-IsH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Рейтинг Доверия-->
@@ -245,7 +244,7 @@
             </objects>
             <point key="canvasLocation" x="1562" y="-320"/>
         </scene>
-        <!--Second-->
+        <!--О нас-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="IngPoll" customModuleProvider="target" sceneMemberID="viewController">
@@ -257,47 +256,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Соцопросы IngPoll" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="157" y="40" width="285" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpQ-Ns-NjI">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4z-WV-afo">
+                                        <rect key="frame" x="42" y="208" width="517" height="165"/>
+                                        <mutableString key="text">Сервис социологических опросов Ing Poll проводит исследования общественного мнения в Республике Ингушетия. В своей работе мы используем полевые исследования, опросы по телефону, а также настоящее приложение, которое будет постоянно совершенствоваться и развиваться. Мы гарантируем полную конфиденциальность всем нашим респондентам. По всем вопросам, в том числе, для заказа социологического опроса пишите нам blablaingpoll@gmail.com.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Соцопросы IngPoll" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaY-LV-tsG">
+                                        <rect key="frame" x="131" y="78" width="222" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="Sfm-Sc-FHf"/>
+                                            <constraint firstAttribute="width" constant="222" id="sKR-h0-1lE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="285" id="FV3-7h-KcZ"/>
-                                    <constraint firstAttribute="height" constant="42" id="J9a-Sg-ahS"/>
+                                    <constraint firstItem="gaY-LV-tsG" firstAttribute="top" secondItem="hpQ-Ns-NjI" secondAttribute="top" constant="78" id="KfK-D7-7kA"/>
+                                    <constraint firstAttribute="trailing" secondItem="gaY-LV-tsG" secondAttribute="trailing" constant="247" id="TuV-kh-wDd"/>
+                                    <constraint firstItem="gaY-LV-tsG" firstAttribute="leading" secondItem="hpQ-Ns-NjI" secondAttribute="leading" constant="131" id="Wtn-HG-dtk"/>
+                                    <constraint firstAttribute="bottom" secondItem="gaY-LV-tsG" secondAttribute="bottom" constant="484" id="zYX-Jx-Z88"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yh5-wv-5it">
-                                <rect key="frame" x="24" y="90" width="552" height="155"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="155" id="bcc-Ht-yEM"/>
-                                </constraints>
-                                <mutableString key="text">Сервис социологических опросов Ing Poll проводит исследования общественного мнения в Республике Ингушетия. В своей работе мы используем полевые исследования, опросы по телефону, а также настоящее приложение, которое будет постоянно совершенствоваться и развиваться. Мы гарантируем полную конфиденциальность всем нашим респондентам. По всем вопросам, в том числе, для заказа социологического опроса пишите нам ingpoll@gmail.com.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Yh5-wv-5it" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="8" id="1VC-Ym-cKc"/>
-                            <constraint firstItem="Yh5-wv-5it" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" id="1b2-Dv-xOY"/>
-                            <constraint firstAttribute="centerX" secondItem="Yh5-wv-5it" secondAttribute="centerX" id="HJg-cx-D0E"/>
-                            <constraint firstItem="zEq-FU-wV5" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="20" id="R9a-CC-nr0"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="c6E-SQ-mpW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Yh5-wv-5it" secondAttribute="trailing" constant="8" id="fql-ek-7pU"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstAttribute="trailing" secondItem="hpQ-Ns-NjI" secondAttribute="trailing" id="eh0-oj-7mV"/>
+                            <constraint firstAttribute="bottom" secondItem="hpQ-Ns-NjI" secondAttribute="bottom" id="msn-RR-z78"/>
+                            <constraint firstItem="hpQ-Ns-NjI" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="x89-q5-UGp"/>
+                            <constraint firstItem="hpQ-Ns-NjI" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="yaX-uF-zrl"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="qqM-NS-xev"/>
-                                <exclude reference="qzY-Ky-pLD"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="О нас" image="info.png" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -387,11 +383,11 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--First-->
+        <!--Опрос-->
         <scene sceneID="t5g-FN-IFV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oOJ-1j-iSc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Опрос" image="poll.png" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Ph-TQ-VCM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -415,7 +411,7 @@
     <resources>
         <image name="evkur.png" width="385" height="270"/>
         <image name="facebooklogin.png" width="492" height="108"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="info.png" width="24" height="24"/>
+        <image name="poll.png" width="24" height="19"/>
     </resources>
 </document>
