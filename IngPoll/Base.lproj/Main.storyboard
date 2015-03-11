@@ -257,20 +257,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Ing Poll" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="195" y="40" width="210" height="42"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Соцопросы IngPoll" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <rect key="frame" x="157" y="40" width="285" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="285" id="FV3-7h-KcZ"/>
                                     <constraint firstAttribute="height" constant="42" id="J9a-Sg-ahS"/>
-                                    <constraint firstAttribute="width" constant="210" id="fGR-VZ-W0o"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yh5-wv-5it">
-                                <rect key="frame" x="24" y="90" width="552" height="90"/>
-                                <string key="text">The bla bla text The bla bla text The bla bla text The bla bla text The bla bla text The bla bla text The bla bla text The bla bla text The bla bla text The bla bla text The bla bla text The bla bla text The bla bla text The bla bla text The bla bla text  The bla bla text The bla bla text The bla bla text The bla bla text The bla bla text The bla bla text The bla bla text The bla bla text </string>
+                                <rect key="frame" x="24" y="90" width="552" height="155"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="155" id="bcc-Ht-yEM"/>
+                                </constraints>
+                                <mutableString key="text">Сервис социологических опросов Ing Poll проводит исследования общественного мнения в Республике Ингушетия. В своей работе мы используем полевые исследования, опросы по телефону, а также настоящее приложение, которое будет постоянно совершенствоваться и развиваться. Мы гарантируем полную конфиденциальность всем нашим респондентам. По всем вопросам, в том числе, для заказа социологического опроса пишите нам ingpoll@gmail.com.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -312,16 +315,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Ingush Poll" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MM-fx-q2O">
-                                <rect key="frame" x="184" y="91" width="232" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="5j2-1q-CvK"/>
-                                    <constraint firstAttribute="width" constant="232" id="Jv2-E4-JTD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login was unsuccesful, please try again" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyk-mv-amp">
                                 <rect key="frame" x="162" y="245" width="276" height="21"/>
                                 <constraints>
@@ -345,6 +338,16 @@
                                     <action selector="signIn:" destination="q4W-ho-IsH" eventType="touchUpInside" id="uLe-bL-ecz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Соцопросы IngPoll" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MM-fx-q2O">
+                                <rect key="frame" x="155" y="91" width="290" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="5j2-1q-CvK"/>
+                                    <constraint firstAttribute="width" constant="290" id="7fg-FO-TEZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -374,7 +377,6 @@
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.0" green="0.69411766529999996" blue="0.09803922474" alpha="1" colorSpace="deviceRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="oOJ-1j-iSc" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>

@@ -101,6 +101,17 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        UITabBar.appearance().tintColor = UIColor.redColor()
+//        UITabBar.appearance().barTintColor = UIColor.yellowColor()
+//        
+//        if let tabBarItem = tabBarController?.tabBar.items?.first as? UITabBarItem {
+//            let unselectedImage = UIImage(named: "About-50.png")
+//            let selectedImage = UIImage(named: "About-50.png")
+//            
+//            tabBarItem.image = unselectedImage?.imageWithRenderingMode(.AlwaysOriginal)
+//            tabBarItem.selectedImage = selectedImage}
+
         // Do any additional setup after loading the view, typically from a nib.
         
         let cloudFunctionResponse : AnyObject! = PFCloud.callFunction("ratio", withParameters: [:])
