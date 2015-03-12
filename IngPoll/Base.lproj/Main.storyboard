@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="q4W-ho-IsH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Рейтинг Доверия-->
@@ -256,41 +257,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpQ-Ns-NjI">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4z-WV-afo">
-                                        <rect key="frame" x="42" y="208" width="517" height="165"/>
-                                        <mutableString key="text">Сервис социологических опросов Ing Poll проводит исследования общественного мнения в Республике Ингушетия. В своей работе мы используем полевые исследования, опросы по телефону, а также настоящее приложение, которое будет постоянно совершенствоваться и развиваться. Мы гарантируем полную конфиденциальность всем нашим респондентам. По всем вопросам, в том числе, для заказа социологического опроса пишите нам blablaingpoll@gmail.com.</mutableString>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Соцопросы IngPoll" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaY-LV-tsG">
-                                        <rect key="frame" x="131" y="78" width="222" height="38"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="38" id="Sfm-Sc-FHf"/>
-                                            <constraint firstAttribute="width" constant="222" id="sKR-h0-1lE"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Соцопросы IngPoll" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIm-67-5OW">
+                                <rect key="frame" x="188" y="28" width="222" height="38"/>
                                 <constraints>
-                                    <constraint firstItem="gaY-LV-tsG" firstAttribute="top" secondItem="hpQ-Ns-NjI" secondAttribute="top" constant="78" id="KfK-D7-7kA"/>
-                                    <constraint firstAttribute="trailing" secondItem="gaY-LV-tsG" secondAttribute="trailing" constant="247" id="TuV-kh-wDd"/>
-                                    <constraint firstItem="gaY-LV-tsG" firstAttribute="leading" secondItem="hpQ-Ns-NjI" secondAttribute="leading" constant="131" id="Wtn-HG-dtk"/>
-                                    <constraint firstAttribute="bottom" secondItem="gaY-LV-tsG" secondAttribute="bottom" constant="484" id="zYX-Jx-Z88"/>
+                                    <constraint firstAttribute="height" constant="38" id="fvu-D2-k1r"/>
+                                    <constraint firstAttribute="width" constant="222" id="iPc-Tk-MEJ"/>
                                 </constraints>
-                            </scrollView>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aJ-g6-fgq">
+                                <rect key="frame" x="30" y="74" width="540" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="zg0-S6-8fl"/>
+                                </constraints>
+                                <string key="text">Сервис социологических опросов Ing Poll проводит исследования общественного мнения в Республике Ингушетия. В своей работе мы используем полевые исследования, опросы по телефону, а также настоящее приложение, которое будет постоянно совершенствоваться и развиваться. Мы гарантируем полную конфиденциальность всем нашим респондентам. По всем вопросам, в том числе, для заказа социологического опроса пишите нам blablaingpoll@gmail.com.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="hpQ-Ns-NjI" secondAttribute="trailing" id="eh0-oj-7mV"/>
-                            <constraint firstAttribute="bottom" secondItem="hpQ-Ns-NjI" secondAttribute="bottom" id="msn-RR-z78"/>
-                            <constraint firstItem="hpQ-Ns-NjI" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="x89-q5-UGp"/>
-                            <constraint firstItem="hpQ-Ns-NjI" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="yaX-uF-zrl"/>
+                            <constraint firstItem="8aJ-g6-fgq" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="14" id="8mx-Fl-Pog"/>
+                            <constraint firstAttribute="centerX" secondItem="VIm-67-5OW" secondAttribute="centerX" constant="1" id="CwH-Md-0jn"/>
+                            <constraint firstItem="VIm-67-5OW" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="8" id="Dih-cY-k3K"/>
+                            <constraint firstItem="8aJ-g6-fgq" firstAttribute="top" secondItem="VIm-67-5OW" secondAttribute="bottom" constant="8" id="dka-Bs-cm6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8aJ-g6-fgq" secondAttribute="trailing" constant="14" id="huy-iP-8Yb"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="О нас" image="info.png" id="cPa-gy-q4n"/>
