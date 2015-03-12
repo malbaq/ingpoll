@@ -10,7 +10,7 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    let contentToShare = ["Current rating is XX. Download the app at url to vote. To bring your voice tweet with #IngPoll"]
+    let contentToShare = ["Рейтинг доверия равен... Если хотите знать, скачайте приложение по ссылке."]
     
     var votingStatus: Bool?
     
