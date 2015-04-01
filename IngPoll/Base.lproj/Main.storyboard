@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="q4W-ho-IsH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="q4W-ho-IsH">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Рейтинг Доверия-->
@@ -54,7 +53,7 @@
                                     <constraint firstAttribute="height" constant="14" id="sAj-zl-d30"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -127,7 +126,7 @@
                                     <constraint firstAttribute="height" constant="20" id="foT-dE-xHU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -143,7 +142,7 @@
                                     <constraint firstAttribute="width" constant="250" id="YgR-Nu-wdd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Голосование доступно ежедневно" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUp-gV-nZx">
@@ -155,7 +154,7 @@
                                     <constraint firstAttribute="width" constant="250" id="x0x-T4-T3Y"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -253,45 +252,69 @@
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW" userLabel="Main View">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Соцопросы IngPoll" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIm-67-5OW">
-                                <rect key="frame" x="188" y="28" width="222" height="38"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zg-dR-sZx">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ONk-yI-fZ7" userLabel="Container View">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="754" text="Соцопросы IngPoll" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIm-67-5OW">
+                                                <rect key="frame" x="196" y="30" width="208" height="28"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="753" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aJ-g6-fgq">
+                                                <rect key="frame" x="20" y="66" width="560" height="126"/>
+                                                <mutableString key="text">Сервис социологических опросов IngPoll проводит исследования общественного мнения в Республике Ингушетия. В своей работе мы используем полевые исследования, опросы по телефону, а также настоящее приложение, которое будет постоянно совершенствоваться и развиваться. Мы гарантируем полную конфиденциальность всем нашим респондентам. По всем вопросам, в том числе, для заказа социологического опроса пишите нам malbakov@gmail.com.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="centerX" secondItem="8aJ-g6-fgq" secondAttribute="centerX" id="4fx-lb-ekI"/>
+                                            <constraint firstItem="8aJ-g6-fgq" firstAttribute="leading" secondItem="ONk-yI-fZ7" secondAttribute="leading" constant="20" id="M4r-1b-oAA"/>
+                                            <constraint firstItem="8aJ-g6-fgq" firstAttribute="top" secondItem="VIm-67-5OW" secondAttribute="bottom" constant="8" id="UYh-pz-nQ0"/>
+                                            <constraint firstAttribute="trailing" secondItem="8aJ-g6-fgq" secondAttribute="trailing" constant="20" id="XE5-NY-Rax"/>
+                                            <constraint firstItem="VIm-67-5OW" firstAttribute="top" secondItem="ONk-yI-fZ7" secondAttribute="top" constant="30" id="hJE-qm-1Rr"/>
+                                            <constraint firstAttribute="height" constant="600" placeholder="YES" id="hlV-88-xqx"/>
+                                            <constraint firstAttribute="centerX" secondItem="VIm-67-5OW" secondAttribute="centerX" id="j9O-Xq-drD"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="4fx-lb-ekI"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="fvu-D2-k1r"/>
-                                    <constraint firstAttribute="width" constant="222" id="iPc-Tk-MEJ"/>
+                                    <constraint firstItem="ONk-yI-fZ7" firstAttribute="top" secondItem="8zg-dR-sZx" secondAttribute="top" id="DV2-zJ-Ewy"/>
+                                    <constraint firstAttribute="bottom" secondItem="ONk-yI-fZ7" secondAttribute="bottom" id="ILo-CA-ipf"/>
+                                    <constraint firstAttribute="trailing" secondItem="ONk-yI-fZ7" secondAttribute="trailing" id="PYR-fl-7XA"/>
+                                    <constraint firstItem="ONk-yI-fZ7" firstAttribute="leading" secondItem="8zg-dR-sZx" secondAttribute="leading" id="XtR-J3-X7b"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aJ-g6-fgq">
-                                <rect key="frame" x="30" y="74" width="540" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="zg0-S6-8fl"/>
-                                </constraints>
-                                <string key="text">Сервис социологических опросов Ing Poll проводит исследования общественного мнения в Республике Ингушетия. В своей работе мы используем полевые исследования, опросы по телефону, а также настоящее приложение, которое будет постоянно совершенствоваться и развиваться. Мы гарантируем полную конфиденциальность всем нашим респондентам. По всем вопросам, в том числе, для заказа социологического опроса пишите нам blablaingpoll@gmail.com.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="8aJ-g6-fgq" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="14" id="8mx-Fl-Pog"/>
-                            <constraint firstAttribute="centerX" secondItem="VIm-67-5OW" secondAttribute="centerX" constant="1" id="CwH-Md-0jn"/>
-                            <constraint firstItem="VIm-67-5OW" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="8" id="Dih-cY-k3K"/>
-                            <constraint firstItem="8aJ-g6-fgq" firstAttribute="top" secondItem="VIm-67-5OW" secondAttribute="bottom" constant="8" id="dka-Bs-cm6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="8aJ-g6-fgq" secondAttribute="trailing" constant="14" id="huy-iP-8Yb"/>
+                            <constraint firstAttribute="trailing" secondItem="8zg-dR-sZx" secondAttribute="trailing" id="cVw-vm-hjR"/>
+                            <constraint firstItem="8zg-dR-sZx" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="d7S-ir-IYg"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="8zg-dR-sZx" secondAttribute="bottom" id="mTU-hw-DLi"/>
+                            <constraint firstItem="8zg-dR-sZx" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="spy-8U-ug7"/>
+                            <constraint firstItem="ONk-yI-fZ7" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="width" id="yIB-uk-KVh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="О нас" image="info.png" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="820" y="363"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="iAg-Mx-mCJ">
@@ -335,7 +358,7 @@
                                     <constraint firstAttribute="width" constant="290" id="7fg-FO-TEZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

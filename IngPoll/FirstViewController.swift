@@ -10,7 +10,7 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    let contentToShare = ["Рейтинг доверия равен... Если хотите знать, скачайте приложение по ссылке."]
+    let contentToShare = ["Если знать рейтинг доверия главы Ингушетии, скачайте приложение по ссылке."]
     
     var votingStatus: Bool?
     
