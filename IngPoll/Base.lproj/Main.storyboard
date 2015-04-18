@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="q4W-ho-IsH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="q4W-ho-IsH">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--Рейтинг Доверия-->
@@ -270,7 +271,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="753" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aJ-g6-fgq">
                                                 <rect key="frame" x="20" y="66" width="560" height="126"/>
-                                                <mutableString key="text">Сервис социологических опросов IngPoll проводит исследования общественного мнения в Республике Ингушетия. В своей работе мы используем полевые исследования, опросы по телефону, а также настоящее приложение, которое будет постоянно совершенствоваться и развиваться. Мы гарантируем полную конфиденциальность всем нашим респондентам. По всем вопросам, в том числе, для заказа социологического опроса пишите нам malbakov@gmail.com.</mutableString>
+                                                <string key="text">Сервис социологических опросов IngPoll проводит исследования общественного мнения в Республике Ингушетия. В своей работе мы используем полевые исследования, опросы по телефону, а также настоящее приложение, которое будет постоянно совершенствоваться и развиваться. Мы гарантируем полную конфиденциальность всем нашим респондентам. По всем вопросам, в том числе, для заказа социологического опроса пишите нам malbakov@gmail.com.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
