@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E21258BB1A977C2F00EB4210 /* evkur.png in Resources */ = {isa = PBXBuildFile; fileRef = E21258BA1A977C2F00EB4210 /* evkur.png */; };
-		E23FF1CD1AE27FC300726AEF /* original.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E23FF1CC1AE27FC300726AEF /* original.jpg */; };
 		E24B7C6A1AE241890026E63B /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24B7C691AE241890026E63B /* FBSDKShareKit.framework */; };
 		E25200BD1A6FC46300ACBD50 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25200BC1A6FC46300ACBD50 /* LoginViewController.swift */; };
 		E25200C11A6FC57F00ACBD50 /* facebooklogin.png in Resources */ = {isa = PBXBuildFile; fileRef = E25200C01A6FC57F00ACBD50 /* facebooklogin.png */; };
@@ -36,6 +35,7 @@
 		E2CBD6841A6FB06500E3B179 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CBD6831A6FB06500E3B179 /* Security.framework */; };
 		E2CBD6861A6FB06E00E3B179 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CBD6851A6FB06E00E3B179 /* StoreKit.framework */; };
 		E2CBD6881A6FB07E00E3B179 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CBD6871A6FB07E00E3B179 /* SystemConfiguration.framework */; };
+		E2D1C5471AE2842C00DBB3A8 /* original.png in Resources */ = {isa = PBXBuildFile; fileRef = E2D1C5461AE2842C00DBB3A8 /* original.png */; };
 		E2EC082D1A8F73F80076DC7E /* backgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = E2EC082C1A8F73F80076DC7E /* backgroundImage.png */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +51,6 @@
 
 /* Begin PBXFileReference section */
 		E21258BA1A977C2F00EB4210 /* evkur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = evkur.png; sourceTree = "<group>"; };
-		E23FF1CC1AE27FC300726AEF /* original.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = original.jpg; sourceTree = "<group>"; };
 		E24B7C691AE241890026E63B /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		E25200BC1A6FC46300ACBD50 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E25200C01A6FC57F00ACBD50 /* facebooklogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebooklogin.png; sourceTree = "<group>"; };
@@ -84,6 +83,7 @@
 		E2CBD6831A6FB06500E3B179 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E2CBD6851A6FB06E00E3B179 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		E2CBD6871A6FB07E00E3B179 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E2D1C5461AE2842C00DBB3A8 /* original.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = original.png; sourceTree = "<group>"; };
 		E2EC082C1A8F73F80076DC7E /* backgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,7 +161,7 @@
 				E26D27C31AB0A10F00F3008B /* info.png */,
 				E26D27C41AB0A10F00F3008B /* poll.png */,
 				E2CBD6511A6FAA9200E3B179 /* Images.xcassets */,
-				E23FF1CC1AE27FC300726AEF /* original.jpg */,
+				E2D1C5461AE2842C00DBB3A8 /* original.png */,
 				E2CBD6531A6FAA9200E3B179 /* LaunchScreen.xib */,
 				E24B7C691AE241890026E63B /* FBSDKShareKit.framework */,
 				E2CBD66F1A6FAF1C00E3B179 /* Bolts.framework */,
@@ -282,10 +282,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E23FF1CD1AE27FC300726AEF /* original.jpg in Resources */,
 				E21258BB1A977C2F00EB4210 /* evkur.png in Resources */,
 				E26D27C51AB0A10F00F3008B /* info.png in Resources */,
 				E2CBD6501A6FAA9200E3B179 /* Main.storyboard in Resources */,
+				E2D1C5471AE2842C00DBB3A8 /* original.png in Resources */,
 				E2CBD6551A6FAA9200E3B179 /* LaunchScreen.xib in Resources */,
 				E2CBD6521A6FAA9200E3B179 /* Images.xcassets in Resources */,
 				E2EC082D1A8F73F80076DC7E /* backgroundImage.png in Resources */,
