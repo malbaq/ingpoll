@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
         
         self.signInCancelledLabel.alpha = 0
         
-        PFFacebookUtils.logInWithPermissions(permissions, {
+        PFFacebookUtils.logInWithPermissions(permissions, block: {
             (user: PFUser!, error: NSError!) -> Void in
             if user == nil {
                 self.signInCancelledLabel.alpha = 1

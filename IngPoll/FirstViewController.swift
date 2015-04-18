@@ -39,7 +39,7 @@ class FirstViewController: UIViewController {
             var score = PFObject(className: "score")
             score.setObject(1, forKey: "vote")
             score.saveInBackgroundWithBlock{
-                (succes: Bool!, error: NSError!) -> Void in
+                (succes: Bool, error: NSError!) -> Void in
                 if succes == true {
                     println("Done with ID \(score.objectId)")
                     //update NSUserdefaults
@@ -71,7 +71,7 @@ class FirstViewController: UIViewController {
             var score = PFObject(className: "score")
             score.setObject(0, forKey: "vote")
             score.saveInBackgroundWithBlock{
-                (succes: Bool!, error: NSError!) -> Void in
+                (succes: Bool, error: NSError!) -> Void in
                 if succes == true {
                     println("Done with ID \(score.objectId)")
                     //update NSUserdefaults
@@ -118,13 +118,13 @@ class FirstViewController: UIViewController {
         
         println(cloudFunctionResponse)
         
-        let cloudFunctionResponseRatingToFloat = (cloudFunctionResponse["rating"]) as Float
+        let cloudFunctionResponseRatingToFloat = (cloudFunctionResponse["rating"]) as! Float
    //     currentRating.text = "\(somethingAsFLoat)" + "%"
         
         let cloudFunctionResponseRatingToString = String(format: "%.1f", cloudFunctionResponseRatingToFloat)
         currentRating.text = cloudFunctionResponseRatingToString + "%"
 
-        let cloudFunctionResponseVoteToInt = cloudFunctionResponse["vote"] as Int
+        let cloudFunctionResponseVoteToInt = cloudFunctionResponse["vote"] as! Int
         
         let cloudFunctionResponseVoteToString = String(cloudFunctionResponseVoteToInt)
         numberOfVotes.text = cloudFunctionResponseVoteToString + " чел."
