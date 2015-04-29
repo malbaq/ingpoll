@@ -53,13 +53,21 @@ class FirstViewController: UIViewController {
             }
         } else {
             //alert
-            var alert = UIAlertController(title: "Превышен лимит голосования", message: "Вы можете проголосовать только 1(один) раз в сутки. Последний раз Вы голосовали \(self.controlDate!) (Гринвич).", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { action in
-                alert.dismissViewControllerAnimated(true, completion: nil)
-            }))
-            self.presentViewController(alert, animated: true, completion: nil)
-            
-            println("Status is \(votingStatus)")
+            switch UIDevice.currentDevice().systemVersion.compare("8.0.0", options: NSStringCompareOptions.NumericSearch) {
+            case .OrderedSame, .OrderedDescending:
+                var alert = UIAlertController(title: "Превышен лимит голосования", message: "Вы можете проголосовать только 1(один) раз в сутки.", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { action in
+                    alert.dismissViewControllerAnimated(true, completion: nil)
+                }))
+                self.presentViewController(alert, animated: true, completion: nil)
+                println("Status is \(votingStatus)")
+                println("iOS >= 8.0")
+            default:
+                var alert = UIAlertView(title: "Превышен лимит голосования", message: "Вы можете проголосовать только 1(один) раз в сутки.", delegate: nil, cancelButtonTitle: "ОК")
+                alert.show()
+                println("Status is \(votingStatus)")
+                println("iOS < 8.0")
+            }
         }
     }
     
@@ -85,13 +93,21 @@ class FirstViewController: UIViewController {
             }
         } else {
             //alert
-            var alert = UIAlertController(title: "Превышен лимит голосования", message: "Вы можете проголосовать только 1(один) раз в сутки. Последний раз Вы голосовали \(self.controlDate!) (Гринвич).", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { action in
-                alert.dismissViewControllerAnimated(true, completion: nil)
-            }))
-            self.presentViewController(alert, animated: true, completion: nil)
-            
-            println("Status is \(votingStatus)")
+            switch UIDevice.currentDevice().systemVersion.compare("8.0.0", options: NSStringCompareOptions.NumericSearch) {
+            case .OrderedSame, .OrderedDescending:
+                var alert = UIAlertController(title: "Превышен лимит голосования", message: "Вы можете проголосовать только 1(один) раз в сутки.", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { action in
+                    alert.dismissViewControllerAnimated(true, completion: nil)
+                }))
+                self.presentViewController(alert, animated: true, completion: nil)
+                println("Status is \(votingStatus)")
+                println("iOS >= 8.0")
+            default:
+                var alert = UIAlertView(title: "Превышен лимит голосования", message: "Вы можете проголосовать только 1(один) раз в сутки.", delegate: nil, cancelButtonTitle: "ОК")
+                alert.show()
+                println("Status is \(votingStatus)")
+                println("iOS < 8.0")
+            }
         }
     }
     

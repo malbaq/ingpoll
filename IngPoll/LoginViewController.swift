@@ -34,7 +34,6 @@ class LoginViewController: UIViewController {
                 NSLog("User logged in through Facebook!")
             }
         })
-
     }
     
     override func viewDidLoad() {
