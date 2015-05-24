@@ -147,7 +147,7 @@ class FirstViewController: UIViewController {
             let cloudFunctionResponseVoteToString = String(cloudFunctionResponseVoteToInt)
             numberOfVotes.text = cloudFunctionResponseVoteToString + " чел."
         }
-        // Find if user haven't already voted within 1 day so if his/her voting status true
+        // Find if user haven't already voted within 1 day then his voting status true
         
         var timeInterval = controlDate?.timeIntervalSinceNow
         var dayInSeconds = 24.0 * -3600
