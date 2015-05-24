@@ -16,12 +16,12 @@ class FirstViewController: UIViewController {
     
     var controlDate = NSUserDefaults.standardUserDefaults().objectForKey("controlDate") as? NSDate
     
-    @IBAction func logOut(sender: AnyObject) {
-    
-        PFUser.logOut()
-        let loginVC = storyboard?.instantiateViewControllerWithIdentifier("loginVC") as? LoginViewController
-        self.presentViewController(loginVC!, animated: true, completion: nil)
-    }
+//    @IBAction func logOut(sender: AnyObject) {
+//    
+//        PFUser.logOut()
+//        let loginVC = storyboard?.instantiateViewControllerWithIdentifier("loginVC") as? LoginViewController
+//        self.presentViewController(loginVC!, animated: true, completion: nil)
+//    }
     
     @IBOutlet var evkurovImage: UIImageView!
     
@@ -134,17 +134,19 @@ class FirstViewController: UIViewController {
         
         println(cloudFunctionResponse)
         
-        let cloudFunctionResponseRatingToFloat = (cloudFunctionResponse["rating"]) as! Float
-   //     currentRating.text = "\(somethingAsFLoat)" + "%"
+        if let checkOptional = cloudFunctionResponse {
         
-        let cloudFunctionResponseRatingToString = String(format: "%.1f", cloudFunctionResponseRatingToFloat)
-        currentRating.text = cloudFunctionResponseRatingToString + "%"
+            let cloudFunctionResponseRatingToFloat = (cloudFunctionResponse["rating"]) as! Float
+            //     currentRating.text = "\(somethingAsFLoat)" + "%"
+        
+            let cloudFunctionResponseRatingToString = String(format: "%.1f", cloudFunctionResponseRatingToFloat)
+            currentRating.text = cloudFunctionResponseRatingToString + "%"
 
-        let cloudFunctionResponseVoteToInt = cloudFunctionResponse["vote"] as! Int
+            let cloudFunctionResponseVoteToInt = cloudFunctionResponse["vote"] as! Int
         
-        let cloudFunctionResponseVoteToString = String(cloudFunctionResponseVoteToInt)
-        numberOfVotes.text = cloudFunctionResponseVoteToString + " чел."
-        
+            let cloudFunctionResponseVoteToString = String(cloudFunctionResponseVoteToInt)
+            numberOfVotes.text = cloudFunctionResponseVoteToString + " чел."
+        }
         // Find if user haven't already voted within 1 day so if his/her voting status true
         
         var timeInterval = controlDate?.timeIntervalSinceNow
