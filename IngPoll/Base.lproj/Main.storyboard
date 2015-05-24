@@ -311,71 +311,6 @@
             </objects>
             <point key="canvasLocation" x="820" y="363"/>
         </scene>
-        <!--Login View Controller-->
-        <scene sceneID="iAg-Mx-mCJ">
-            <objects>
-                <viewController storyboardIdentifier="loginVC" id="q4W-ho-IsH" customClass="LoginViewController" customModule="IngPoll" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Vvd-w3-KfY"/>
-                        <viewControllerLayoutGuide type="bottom" id="hsr-ev-MGY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uzW-PP-QLh">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login was unsuccesful, please try again" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyk-mv-amp">
-                                <rect key="frame" x="162" y="245" width="276" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="276" id="4hJ-wM-O57"/>
-                                    <constraint firstAttribute="height" constant="21" id="Jfr-L2-fYC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CC9-8R-deR">
-                                <rect key="frame" x="156" y="272" width="289" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="289" id="iUf-Qz-m4D"/>
-                                    <constraint firstAttribute="height" constant="56" id="jWG-ew-0vT"/>
-                                </constraints>
-                                <state key="normal" image="facebooklogin.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="signIn:" destination="q4W-ho-IsH" eventType="touchUpInside" id="uLe-bL-ecz"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Соцопросы IngPoll" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MM-fx-q2O">
-                                <rect key="frame" x="155" y="91" width="290" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="5j2-1q-CvK"/>
-                                    <constraint firstAttribute="width" constant="290" id="7fg-FO-TEZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="CC9-8R-deR" secondAttribute="centerX" id="FeG-WU-VL8"/>
-                            <constraint firstAttribute="centerY" secondItem="CC9-8R-deR" secondAttribute="centerY" id="FyV-7B-nMT"/>
-                            <constraint firstAttribute="centerX" secondItem="9MM-fx-q2O" secondAttribute="centerX" id="JB9-Nt-MzT"/>
-                            <constraint firstItem="CC9-8R-deR" firstAttribute="top" secondItem="iyk-mv-amp" secondAttribute="bottom" constant="6" id="ptO-e8-q4Z"/>
-                            <constraint firstItem="9MM-fx-q2O" firstAttribute="top" secondItem="Vvd-w3-KfY" secondAttribute="bottom" constant="71" id="tR4-Gq-NLH"/>
-                            <constraint firstAttribute="centerX" secondItem="iyk-mv-amp" secondAttribute="centerX" id="xyq-y8-8kw"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="signInCancelledLabel" destination="iyk-mv-amp" id="Kp1-lB-mqF"/>
-                        <segue destination="49e-Tb-3d3" kind="show" identifier="login" id="ODZ-In-e5t"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="I34-ec-CJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-711" y="0.0"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -422,7 +357,6 @@
     </scenes>
     <resources>
         <image name="evkur.png" width="385" height="270"/>
-        <image name="facebooklogin.png" width="492" height="108"/>
         <image name="info.png" width="24" height="24"/>
         <image name="poll.png" width="24" height="19"/>
     </resources>

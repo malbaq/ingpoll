@@ -10,7 +10,7 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    let contentToShare = ["Если знать рейтинг доверия главы Ингушетии, скачайте приложение по ссылке."]
+    let contentToShare = ["Хотите знать рейтинг доверия главы Ингушетии? Скачайте приложение по ссылке."]
     
     var votingStatus: Bool?
     
@@ -134,7 +134,7 @@ class FirstViewController: UIViewController {
         
         println(cloudFunctionResponse)
         
-        if let checkOptional = cloudFunctionResponse {
+        if let checkOptional: AnyObject = cloudFunctionResponse {
         
             let cloudFunctionResponseRatingToFloat = (cloudFunctionResponse["rating"]) as! Float
             //     currentRating.text = "\(somethingAsFLoat)" + "%"

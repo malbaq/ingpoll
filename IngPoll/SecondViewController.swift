@@ -13,10 +13,10 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let like = FBLikeControl()
-        like.objectID = "https://www.facebook.com/ingpoll"
-        self.view.addSubview(like)
-        like.frame = CGRect(x: 20, y: 350, width: 100, height: 100)
+//        let like = FBLikeControl()
+//        like.objectID = "https://www.facebook.com/ingpoll"
+//        self.view.addSubview(like)
+//        like.frame = CGRect(x: 20, y: 350, width: 100, height: 100)
 
     }
 
@@ -27,4 +27,3 @@ class SecondViewController: UIViewController {
 
 
 }
-
